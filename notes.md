@@ -66,13 +66,13 @@ VARIABLES:
 
 There will be 3 types of variables utilized in this process:
 1) Change variables (User enters)
-vlan_id
-vlan_name
-vlan_function
-vlan_ipv4_subnet
-vlan_ipv6_subnet
-unique_id
-dhcp_relay
+- vlan_id
+- vlan_name
+- vlan_function
+- vlan_ipv4_subnet
+- vlan_ipv6_subnet
+- unique_id
+- dhcp_relay
 
 2) Standards variables (Static, cannot be changed)
 3) Device variables (Ansible enters)
