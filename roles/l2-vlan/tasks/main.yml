@@ -1,0 +1,5 @@
+---
+# tasks file for l2-vlan
+- name: Test
+  debug:
+    var: vlans

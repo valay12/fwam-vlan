@@ -1,0 +1,26 @@
+---
+- name: Play1
+  connection: local
+  hosts: switches
+  roles:
+    - roles/l2-vlan
+#- name: Vlan 5
+#  connection: local
+#  hosts: switches
+#  tasks:
+#  - name: Gather facts
+#    nxos_facts:
+#      gather_subset: all
+#  - name: debug
+#    debug:
+#      var: all
+#  - name: Configure vlan
+#    nxos_vlans:
+#      config:
+#      - vlan_id: 5
+#        name: VLAN005
+#      state: merged
+#  - name: command
+#    nxos_command:
+#      commands: show version
+

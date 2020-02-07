@@ -1,0 +1,7 @@
+---
+[switches]
+localhost
+
+vars:
+  vlans:
+  - {vlan_id: 400, vlan_name: FWAM1}
