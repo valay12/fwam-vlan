@@ -1,10 +1,14 @@
 ---
 # vars file for l2-vlan
 
-access_ports: Eth1/10-Eth1/40
-FWAM:
-  vlan_range: 200-500
-  vlan_prefix: FWAM
-DCAM:
-  vlan_range: 500-700
-  vlan_prefix: DCAM
+access_ports: 
+  - Eth1/10
+  - Eth1/40
+function: 
+  FWAM:
+    vlan_range: [200, 500]
+    vlan_prefix: FWAM
+  DCAM:
+    vlan_range: [500, 700]
+    vlan_prefix: DCAM
+my_name: Valay

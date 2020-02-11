@@ -1,5 +1,7 @@
 ---
+
 - name: Play1
+  gather_facts: no
   connection: local
   hosts: switches
   roles:

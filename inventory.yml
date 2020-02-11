@@ -1,7 +1,10 @@
 ---
-[switches]
-localhost
+all:
+  vars:
+    vlans:
+    - {vlan_id: 500, name: FWAM1, function: FWAM}
+    - {vlan_id: 600, name: FWAM2, function: FWAM}
 
-vars:
-  vlans:
-  - {vlan_id: 400, vlan_name: FWAM1}
+switches:
+  hosts:
+    localhost

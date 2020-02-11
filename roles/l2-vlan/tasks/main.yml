@@ -1,5 +1,18 @@
 ---
-# tasks file for l2-vlan
 - name: Test
+  script: test.py {{ vlans|to_json|quote }} {{ function|to_json|quote }}
+  register: output
+
+# tasks file for l2-vlan
+#- name: Test
+#  script: test.py {{ vlans|to_json|quote }}
+#  register: message
+
+- name: Display  
   debug:
-    var: vlans
+    var: output['stdout']
+
+#- name: Vlan
+#  debug:
+#    msg: "Vlans: {{ vlans }}"
+#    msg: "Name {{ my_name }} Gather facts {{ gather_facts }}"
